@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> SHEAT Voice - Complaint Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <div class="header">
+        <h1> SHEAT INSTITUTE OF MANAGEMENT</h1>
+        <p>KM Milestone, 15, NH 56, Airport Road, Babatpur, Uttar Pradesh 221206</p>
+        <h3>CAMPUS VOICE</h3>
+        <p>Anonymous Campus Complaint Box</p>
+        <a href="#student" class="nav-btn">Student View</a>
+        <a href="#admin" class="nav-btn">Admin View</a>
+    </div>
+
+    <!-- STUDENT FORM WITH DETAILS -->
+    <div id="student" class="box">
+        <h2>Submit Your Complaint</h2>
+
+        <label>Full Name <span class="required">*</span></label>
+        <input type="text" placeholder="Ex: Aman Kumar" required>
+
+        <label>Course <span class="required">*</span></label>
+        <select required>
+            <option value="">-- Select Course --</option>
+            <option>BCA</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+            <option>B.Com</option>
+            <option>MCA</option>
+            <option>MBA</option>
+        </select>
+
+        <label>Year <span class="required">*</span></label>
+        <select required>
+            <option value="">-- Select Year --</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <label>Category</label>
+        <input type="radio" value="a" name="cat" class="spn">🎓 Academic
+        <input type="radio" value="b" name="cat" class="spn">🏠 Hostel
+        <input type="radio" value="c" name="cat" class="spn">🏫 Facilities
+        <input type="radio" value="d" name="cat" class="spn">🛡️ Safety
+
+        <label>Your Complaint <span class="required">*</span></label>
+        <textarea rows="4" placeholder="Write your complaint here..." required></textarea>
+
+        <button>Submit Complaint</button>
+        <p style="font-size:11px; color:gray; margin-top:10px;">* Marked fields are compulsory. Data will stay until
+            admin deletes it.</p>
+    </div>
+
+    <!-- ADMIN VIEW -->
+    <div id="admin">
+        <div class="card">
+            <h2 style="text-align:center; color:#1e3a8a;">📊 Admin Dashboard</h2>
+            <div class="trend">🔥 TRENDING: Hostel (5 complaints) is top issue</div>
+            <table>
+                <tr>
+                    <th>Student Details</th>
+                    <th>Category</th>
+                    <th>Complaint</th>
+                    <th>Votes</th>
+                </tr>
+                <tr>
+                    <td><b>Aman Kumar</b><br><small>BCA - 1st Year</small></td>
+                    <td>Hostel</td>
+                    <td>No water in hostel</td>
+                    <td>👍 12</td>
+                </tr>
+                <tr>
+                    <td><b>Riya Patel</b><br><small>B.Tech - 2nd Year</small></td>
+                    <td>Hostel</td>
+                    <td>Fan not working</td>
+                    <td>👍 8</td>
+                </tr>
+                <tr>
+                    <td><b>Rahul Singh</b><br><small>BCA - 1st Year</small></td>
+                    <td>Facilities</td>
+                    <td>Lab AC not working</td>
+                    <td>👍 5</td>
+                </tr>
+            </table>
+            <p style="text-align:center; margin-top:20px;"><a href="#student" style="color:#1e3a8a;">← Back to Student
+                    Page</a></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
